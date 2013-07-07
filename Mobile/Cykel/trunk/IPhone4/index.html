@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html manifest='cykelscore.appcache'>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+        <script type='text/javascript' src='app/libraries/zepto.min.js'></script>
+        <script type='text/javascript' src='app/libraries/backbone/underscore.min.js'></script>
+        <script type='text/javascript' src='app/libraries/backbone/backbone.min.js'></script>
+        <script src='app/libraries/iscroll.js'></script>
+        <title>CykelApp</title>
+    </head>
+
+    <body>
+
+        <div id='preloader'>
+            <img src='images/preloader.gif' />
+        </div>
+
+        <div id='wrapper'>
+
+            <div id='header'>
+                <img src='images/logo.png' id='logo' />
+                <img src='images/connectivity.png' id='connectivity' />
+                <div class='clearfix'></div>
+            </div>
+
+
+            <div id='content'>
+
+            </div>
+
+
+
+            <div id='footer'>
+                <ul id='navigation'>
+                    <li class='active'>
+                        <a href='#/tracker' class='first'>
+                            <img src='images/tracker.png' />
+                            <span>TRACKER</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#/log'>
+                            <img src='images/log.png' />
+                            <span>LOG</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#/settings'>
+                            <img src='images/indstilinger.png'>
+                            <span>INDSTILINGER</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#/quit' class='last'>
+                            <img src='images/afslut.png' />
+                            <span>AFSLUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- TEMPLATE_CACHE -->
+        <div id='cache'>
+
+            <div id='response'>
+
+            </div>
+
+            <div id='templates'>
+
+                <div id='trackerTemplate'>
+                    <img id='biker' src='images/biker.png' />
+                    <div id='startButton'>
+                        <img src='images/timer.png' />
+                        <span>START TRACKING</span>
+                    </div>
+                    <ul id='tracker'>
+                        <li id='distance'>
+                            <img src='images/distance.png' />
+                            <span class='value'>0</span>
+                            <span class='mask'> - m</span>
+                            <div class='clearfix'></div>
+                        </li>
+                        <li id='timer'>
+                            <img src='images/timer.png' />
+                            <span class='value'>00:00:00</span>
+                            <span class='mask'> - h:m:s</span>
+                            <div class='clearfix'></div>
+                        </li>
+                        <li id='speed'>
+                            <img src='images/speed.png' />
+                            <span class='value'>0</span>
+                            <span class='mask'> - km/h</span>
+                            <div class='clearfix'></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id='settingsTemplate'>
+                    <img id='pc' src='images/pc.png' />
+                    <div id='guide'>Her skal du indtaste dit BRUGER-ID fra
+CykelScore.dk websitet.
+Har du ikke en bruger, skal du først oprette
+en på CykelScore.dk.</div>
+                    <div id='idInputWrapper'>
+                        <div id='id'>ID</div>
+                        <input type='text' id='idInput' />
+                        <div class='clearfix'></div>
+                    </div>
+                    <div id='loginButton'>GEM INDSTILLINGER</div>
+                </div>
+
+                <div id='logTemplate'>
+                    <!-- TOUCHSCROLL_ELEMENT -->
+                        <ul id='log'>
+
+<!--                        <li>-->
+<!--                            <img src='images/biker-icon.png' />-->
+<!--                            <span class='item'>5,16km - 8:14min</span>-->
+<!--                            <span class='date'>29.08.2011</span>-->
+<!--                            <div class='clearfix'></div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <img src='images/biker-icon.png' />-->
+<!--                            <span class='item'>5,16km - 8:14min</span>-->
+<!--                            <span class='date'>29.08.2011</span>-->
+<!--                            <div class='clearfix'></div>-->
+<!--                        </li>-->
+                        <!-- EO_TOUCHSCROLL_ELEMENT -->
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- EO_TEMPLATE_CACHE -->
+
+        <!-- SCRIPTS -->
+        <script src='app/libraries/backbone/models.js'></script>
+        <script src='app/libraries/backbone/collections.js'></script>
+        <script src='app/libraries/backbone/views.js'></script>
+        <script src='app/libraries/backbone/router.js'></script>
+        <script src='app/tracker.js'></script>
+        <script src='app/app.js'></script>
+    </body>
+
+</html>
+

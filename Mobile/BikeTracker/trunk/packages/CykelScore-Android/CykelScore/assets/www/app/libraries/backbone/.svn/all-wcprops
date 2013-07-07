@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone
+END
+backbone.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone/backbone.min.js
+END
+underscore.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone/underscore.min.js
+END
+views.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone/views.js
+END
+collections.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone/collections.js
+END
+router.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone/router.js
+END
+models.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/assets/www/app/libraries/backbone/models.js
+END

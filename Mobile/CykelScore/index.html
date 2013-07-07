@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+     <head>
+          <meta name="viewport" content="width=device-width; height=device-height; user-scalable=no" />
+          <meta charset="utf-8">          
+          <script type="text/javascript" src="scripts/phonegap.js"></script>
+          <script type="text/javascript">
+               function loader() {
+                    var state = document.readyState;
+                    if (state == 'loaded' || state == 'complete') {
+                         run();
+                    } else {
+                    	 document.addEventListener('deviceready',run,false);
+                    }
+               }
+               function run() {
+                    var win = function(position) {                          // Grab coordinates object from the Position object passed into success callback.
+                         var coords = position.coords;
+                         document.getElementById("speed").innerHTML = "<p> Speed: "+coords.speed+"</p>"
+                         
+                    };
+                    var fail = function(e) {
+                         alert('Can\'t retrieve position.\nError: ' + e);
+                    };
+                    navigator.geolocation.getCurrentPosition(win, fail);
+               } 
+          </script>
+     </head>
+     <body onload="loader();">
+     	<div id="speed">
+     		
+     	</div>
+     </body>
+</html>

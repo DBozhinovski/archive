@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/BikeTracker/!svn/ver/11/trunk/app/libraries/backbone
+END
+backbone.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/BikeTracker/!svn/ver/2/trunk/app/libraries/backbone/backbone.min.js
+END
+underscore.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/BikeTracker/!svn/ver/2/trunk/app/libraries/backbone/underscore.min.js
+END
+views.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/BikeTracker/!svn/ver/11/trunk/app/libraries/backbone/views.js
+END
+collections.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/BikeTracker/!svn/ver/11/trunk/app/libraries/backbone/collections.js
+END
+router.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/BikeTracker/!svn/ver/7/trunk/app/libraries/backbone/router.js
+END
+models.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/BikeTracker/!svn/ver/11/trunk/app/libraries/backbone/models.js
+END

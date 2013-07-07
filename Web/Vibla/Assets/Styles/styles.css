@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url("../Images/subtle_stripes.png");
+}
+
+.header{
+	background: #000;
+	color: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 4px #999;
+}
+
+	.header span{
+		margin: 0;
+		padding : 10px;
+		font-size: 1.8em;
+	}
+
+.sidebar{
+	float: left;
+	width: 10%;
+}
+
+.content{
+	float: left;
+	width: 90%;
+}
+
+.footer{
+	clear: both;
+}

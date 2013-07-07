@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/proguard.cfg
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/BikeTracker/!svn/ver/10/trunk/packages/CykelScore-Android/CykelScore/AndroidManifest.xml
+END

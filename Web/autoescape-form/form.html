@@ -1,0 +1,463 @@
+<!doctype html>
+
+
+<html>
+<head>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <div id="wl-form">
+    
+        <img src="logo.png" id="logo" />
+    
+        <h2>Bestil billeje her:</h2>
+        <form action="http://www.autoescape.dk/WLSearchResults.aspx">
+            <input type="hidden" name="refererid" value="cb43d038-fcf1-46d2-8a54-096c033e00f5" />
+            <input type="hidden" name="deeplink" value="1" />
+            <input id="CountryID" type="hidden" name="ctry" value="" />
+            <ul>
+            
+                <li>
+                    <input placeholder="Afhentningskontor" type="text" id="PickupSpot" name=""  class="input-big" />
+                    
+                </li>
+                
+                <li>
+      
+                    <input placeholder="Afhentningsdato" type="text" id="PickupDate" name="" readonly="true" class="input-small" />
+                    <img src="calendar.png" class="pickup" />
+                
+                    <select id="PickupTime" class="input-small">
+                        <option>00:00</option>
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option selected="true">10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                    </select>
+                    <input name="pudt" id="pickupDateTime" type="hidden" />
+                   
+                </li>
+                
+                <li>
+                    <input placeholder="Afleveringskontor" readonly="true" type="text" id="DropoffSpot" name="" class="input-big" />
+                    
+                </li>
+                
+                <li>
+                    <input placeholder="Afleveringsdato" type="text" id="DropoffDate" name="" readonly="true" class="input-small" />
+                    <img src="calendar.png" class="dropoff" />
+                    
+                    <select id="DropoffTime" class="input-small">
+                    <option>00:00</option>
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option selected="true">10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                    </select>    
+                    <input name="dodt" id="dropOffDateTime" type="hidden" />
+                    <div class="clearfix"></div>
+                </li>
+            
+            </ul>
+            
+            <input id="PickupSpotID" type="hidden"  name="pu" value="" />
+            <input id="DropoffSpotID" type="hidden"  name="do" value="" />
+            
+            <input id="wl_lang" type="hidden"  value="dk" />
+           
+            <input type="hidden" name="da" value="25" />
+            
+            <button id="edit-submit" name="op" value="" class="form-submit">sog</button>
+        </form>
+    
+    
+        <link rel='stylesheet' href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/themes/ui-lightness/jquery-ui.css">
+        <style>
+            
+            .clearfix:after {
+               content: ".";
+               display: block;
+               clear: both;
+               visibility: hidden;
+               line-height: 0;
+               height: 0;
+            }
+             
+            .clearfix {
+               display: inline-block;
+            }
+             
+            html[xmlns] .clearfix {
+               display: block;
+            }
+             
+            * html .clearfix {
+               height: 1%;
+               overflow: visible;
+            }
+
+            
+            #wl-form{
+            
+                background: #9F0622 url("background.png") no-repeat bottom right;
+                float: left;
+                padding: 10px 10px;
+                border-radius: 10px;
+            
+            }
+            
+            #logo{
+                
+                display: block;
+                margin: 5px auto;
+                
+                
+            }
+            
+            #wl-form ul{
+                
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                text-indent:0 ;
+                
+            }
+            
+            #wl-form select, input{
+                
+                display: block;
+                margin-bottom: 4px;
+                border: 0px;
+                background: transparent;
+                padding: 2px;
+                height: 16px;
+                font-size: 10px;
+                line-height: 16px;
+                float: left;
+                color: #999;
+                font-style: italic;
+                text-indent: 5px;
+                
+            }
+            
+            #wl-form li img.pickup{
+                
+                position: relative;
+                margin-left: -160px;
+                margin-top: 26px;
+                
+            }
+            
+            #wl-form li img.dropoff{
+                
+                position: relative;
+                margin-left: -157px;
+                margin-top: 29px;
+                
+            }
+            
+            #wl-form select{
+                height: 20px;
+            }
+            
+            #wl-form .input-big{
+                
+                width: 266px;
+                background:  url("input-big.png") no-repeat;
+                
+            }
+            
+            #wl-form .input-small{  
+            
+                width: 130px;
+                margin-right: 2px;
+                background:  url("input-small.png") no-repeat;
+            
+            }
+            
+            #wl-form h2{
+                color: #fff;
+                font: 15px/18px sans-serif;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            
+            #wl-form button{
+                
+                text-indent: -9999px;
+                border: 0px;
+                background: url("sog.png") no-repeat;
+                width: 66px;
+                height: 22px;
+                float: right;
+                margin-right: 6px;
+                margin-top: 10px;
+                
+            }
+        
+        </style>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+        <script>
+        	var AESearchForm = {
+		
+		pickUpSpot : "",
+		
+		pickUpDate : "",
+		
+		dropOffSpot : "",
+		
+		datePickers : "",
+		
+		dropOffDate : "",
+		
+		pickUpId : "",
+		
+		dropOffId : "",
+		
+		countryId : "",
+		
+		formId : "",
+		
+		pickUpDateTime : "",
+		
+		dropOffDateTime : "",
+		
+		init : function(){
+			
+			this.pickUpSpot = $("#PickupSpot");
+		
+			this.dropOffSpot = $("#DropoffSpot");
+		
+			this.datePickers = $("#DropoffDate, #PickupDate");
+			
+			this.pickUpDate = $("#PickupDate");
+			
+			this.dropOffDate = $("#DropoffDate");
+		
+			this.pickUpId = $("#PickupSpotID");
+		
+			this.dropOffId = $("#DropoffSpotID");
+		
+			this.countryId = $("#CountryID");
+			
+			this.formId = $("wl-form");
+			
+			this.pickUpDateTime = $("#pickupDateTime");
+			
+			this.dropOffDateTime = $("#dropOffDateTime");
+			
+		},
+		
+		bind : {
+			
+			init : function(){
+				
+				this.bindAutocomplete();
+				this.bindDatepickers();
+				this.bindInputs();
+				this.bindTimeSelects();
+				
+			},
+			
+			bindAutocomplete : function(){
+				
+				AESearchForm.pickUpSpot.autocomplete({
+					focus : function(){
+						
+					},
+					source : function(request, response){
+						$.ajax({
+							url: "http://staging.autoescape.dk/AjaxSearch.aspx",
+							dataType: "jsonp",
+							jsonpCallback: "updateSpotList",
+							contentType: "application/json; charset=utf-8",
+							data: {
+								a: "getspots",
+								c: "updateSpotList",
+								/*cy: country.val(), //restriction by country code */
+								q: request.term
+							},
+							success: function(data) {
+								
+								var spots = $.parseJSON(data);
+ 
+						        response($.map(spots, function(item){
+						        	
+						            return{
+						                label: item.Name,
+						                value: item.Name,
+						                id: item.Id,
+						                ctry: item.CountryId
+						            }
+						        }));
+							}
+						});
+				
+					},
+					
+					minLength: 3,
+					
+				 	delay: 500,
+				 	
+					search: function(){},
+					
+					select: function(event, ui){
+						AESearchForm.countryId.val(ui.item.ctry);
+						
+						if (this.id == AESearchForm.pickUpSpot.attr("id")){
+							AESearchForm.pickUpId.val(ui.item.id);
+							
+							AESearchForm.dropOffSpot.val(ui.item.label).removeClass("error");
+							AESearchForm.dropOffId.val(ui.item.id);
+
+						}
+						
+						if (this.id == AESearchForm.dropOffSpot.attr("id")) {
+							AESearchForm.dropOffId.val(ui.item.id);
+						}
+					}
+					
+				});
+				
+			},
+			
+			bindDatepickers : function(){
+				
+				 $.datepicker.regional['dk'] = {
+						monthNames: ['Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'December'],
+						monthNamesShort: ['jan', 'feb', 'mar', 'apr', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'],
+						dayNames: ['Søndag', 'Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag'],
+						dayNamesShort: ['Søn', 'Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør'],
+						dayNamesMin: ['sø', 'ma', 'ti', 'on', 'to', 'fr', 'lø'],
+						prevText: 'forrige',
+						nextText: 'nøste'
+
+				}
+				
+				$.datepicker.setDefaults($.datepicker.regional["dk"]);
+				
+				AESearchForm.datePickers.datepicker({
+					dateFormat : "yy-mm-dd",
+					firstDay : 1,
+				 	minDate : AESearchForm.calculateDate(new Date(), 1, 1),
+				 	onSelect : function(date){
+						if(this.id==AESearchForm.pickUpDate.attr("id")){
+							var selected = $(this).datepicker("getDate");
+							var newDate = AESearchForm.calculateDate(selected, 5, 0);
+							AESearchForm.dropOffDate.datepicker("option", "minDate", selected);
+							AESearchForm.dropOffDate.datepicker("setDate", newDate);
+						}
+						
+						AESearchForm.pickUpDateTime.val(AESearchForm.pickUpDate.val() + " " + $("#PickupTime").val());
+						AESearchForm.dropOffDateTime.val(AESearchForm.dropOffDate.val() + " " + $("#DropoffTime").val());
+						
+					}
+				
+				});
+				
+				AESearchForm.pickUpDate.datepicker("setDate", AESearchForm.calculateDate(new Date(),7,0));
+				AESearchForm.dropOffDate.datepicker("setDate", AESearchForm.calculateDate(new Date(),14,0));
+				
+				AESearchForm.pickUpDateTime.val(AESearchForm.pickUpDate.val() + " " + $("#PickupTime").val());
+				AESearchForm.dropOffDateTime.val(AESearchForm.dropOffDate.val() + " " + $("#DropoffTime").val());
+				
+				
+			},
+			
+			bindInputs : function(){
+				
+			},
+			
+			bindTimeSelects : function(){
+				
+				$("#PickupTime, #DropoffTime").bind("change", function(){
+					
+					AESearchForm.pickUpDateTime.val(AESearchForm.pickUpDate.val() + " " + $("#PickupTime").val());
+					AESearchForm.dropOffDateTime.val(AESearchForm.dropOffDate.val() + " " + $("#DropoffTime").val());
+					
+				});
+				
+			}
+			
+			
+			
+			
+		},
+		
+		calculateDate : function(date, incr, nw){
+  
+			var yy = date.getFullYear();
+			var mm = date.getMonth();
+			var dd = date.getDate() + incr;
+			var hh = 0;
+			if(nw==0){
+				hh = date.getHours();
+			}
+
+			return new Date(yy, mm, dd, hh, 0);
+		  
+		},
+		
+		run : function(){
+			
+			
+			
+			$(function(){
+	
+				AESearchForm.init();
+				AESearchForm.bind.init();
+	
+			});
+			
+		}
+		
+		
+	}
+	
+	AESearchForm.run();
+
+
+        
+        </script>
+    
+    </div>
+</body>
